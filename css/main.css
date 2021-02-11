@@ -11044,15 +11044,15 @@ h5 {
   width: 15vw;
   position: absolute;
   left: 50%;
-  bottom: -20%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  bottom: -13%;
+  -webkit-transform: translate(-50%, 15%);
+          transform: translate(-50%, 15%);
   border-radius: 2vw;
 }
 
 .about {
   position: relative;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .about .row {
@@ -11095,7 +11095,7 @@ h5 {
 }
 
 .rates {
-  background: url(../img/pricing-section.jpg) center center/cover no-repeat;
+  background: url(../img/pricing-section.png) center center/cover no-repeat;
   min-height: 80vh;
   background-attachment: fixed;
   position: relative;
@@ -11509,12 +11509,6 @@ h5 {
     font-weight: 300;
     padding: 2rem 1rem;
   }
-  #package-types .owl-nav .owl-next span {
-    display: none;
-  }
-  #package-types .owl-nav .owl-prev span {
-    display: none;
-  }
   .showcase blockquote {
     display: none;
   }
@@ -11537,6 +11531,16 @@ h5 {
     -webkit-transform: translateX(-10%);
             transform: translateX(-10%);
     border-radius: 2vw;
+  }
+  .about .grey-overlay::after {
+    width: 50rem;
+    left: -45%;
+  }
+  #package-types .owl-nav .owl-next span {
+    display: none;
+  }
+  #package-types .owl-nav .owl-prev span {
+    display: none;
   }
 }
 /*# sourceMappingURL=main.css.map */

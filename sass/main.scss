@@ -247,8 +247,8 @@ h5 {
         width: 15vw;
         position: absolute;
         left: 50%;
-        bottom: -20%;
-        transform: translateX(-50%);
+        bottom: -13%;
+        transform: translate(-50%, 15%);
         border-radius: 2vw;
     }
 }
@@ -256,7 +256,7 @@ h5 {
 // ABOUT SECTION 
 .about {
     position: relative;
-    overflow-x: hidden;
+    overflow: hidden;
 
     .row {
         margin-top: 13%;
@@ -299,7 +299,7 @@ h5 {
 }
 
 .rates {
-    background: url(../img/pricing-section.jpg) center center/cover no-repeat;
+    background: url(../img/pricing-section.png) center center/cover no-repeat;
     min-height: 80vh;
     background-attachment: fixed;
     position: relative;
@@ -735,27 +735,6 @@ h5 {
                 padding: 2rem 1rem;
             }
         }
-    }
-    
-
-    #package-types {
-
-        .owl-nav {
-            .owl-next {
-                span {
-                    display: none;
-                }
-            }
-
-            .owl-prev {
-                span {
-                    display: none;
-                }
-            }
-        }
-    }
-
-    .showcase {
         blockquote {
            display: none;
         }
@@ -781,6 +760,35 @@ h5 {
         bottom: -20%;
         transform: translateX(-10%);
         border-radius: 2vw;
+        }
+    }
+
+    .about {
+
+        .grey-overlay {
+    
+            &::after {
+                width: 50rem;
+                left: -45%;
+            }
+        }
+    }
+    
+
+    #package-types {
+
+        .owl-nav {
+            .owl-next {
+                span {
+                    display: none;
+                }
+            }
+
+            .owl-prev {
+                span {
+                    display: none;
+                }
+            }
         }
     }
 

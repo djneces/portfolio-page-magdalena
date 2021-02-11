@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <!-- SEO tags  -->
-    <meta name="description" content="">
+    <meta name="description" content="Indywidualnie dopasowane do potrzeb, Twoich lub Twojego dziecka, lekcje języka angielskiego online z doświadczoną lektorką, w zaciszu swojego domu.">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
     <!-- Owl carousel CSS  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" />
@@ -14,11 +14,31 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" />
     <!-- Animate on scroll CSS     -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    
     <link rel="stylesheet" href="css/main.css">
     <title>Magdalena Marcinek | Lektor & tłumacz angielskiego</title>
-</head>
 
-<body id="about" data-spy="scroll" data-target="#main-nav">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Facebook thumbnail  -->
+    <meta property="og:title" content="Magdalena Marcinek | Lektor & tłumacz angielskiego">
+    <meta property="og:description" content="Indywidualnie dopasowane do potrzeb, Twoich lub Twojego dziecka, lekcje języka angielskiego online z doświadczoną lektorką, w zaciszu swojego domu.">
+    <meta property="og:image" content="https://www.lektor-angielskiego.pl/img/thumbnail.jpg">
+    <meta property="og:url" content="https://www.lektor-angielskiego.pl">
+    <!-- Twitter card thumbnail  -->
+    <meta name="twitter:title" content="Magdalena Marcinek | Lektor & tłumacz angielskiego">
+    <meta name="twitter:description" content="Indywidualnie dopasowane do potrzeb, Twoich lub Twojego dziecka, lekcje języka angielskiego online z doświadczoną lektorką, w zaciszu swojego domu.">
+    <meta name="twitter:image" content="https://www.lektor-angielskiego.pl/img/thumbnail.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    </head>
+
+<body data-spy="scroll" data-target="#main-nav">
     <!-- SECTION SHOWCASE  -->
     <section class="showcase" id="showcase">
         <nav class="navbar navbar-expand-md navbar-light fixed-top" id="main-nav">
@@ -49,8 +69,8 @@
                 </div>
                 <div class="social-icons ml-4 ml-sm-3">
                     <a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a>
-                    <a href="https://www.facebook.com"><i class="fab fa-instagram"></i></i></a>
-                    <a href="https://www.facebook.com"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
                 </div>
             </div>
             <div class="col sm-12 md-6 px-0">
@@ -66,7 +86,7 @@
                 </div>
             </div>
         </div>
-        <img src="img/profile-img.jpg" alt="Profile picture" class="profile-img img-fluid">
+        <img src="img/profile-img-m.png" alt="Profile picture" class="profile-img img-fluid">
     </section>
     <!-- SECTION ABOUT  -->
     <section class="about pb-5" id="about">
@@ -330,7 +350,7 @@
                 <div class="col-sm-12 col-md-6 d-flex justify-content-between align-items-center flex-column contact-form">
                     <form class="ml-sm-0 ml-md-3 ml-lg-5 pr-3 mt-5 text-right" action="mailer.php" method="post" id="form">
                         <div class="form-group">
-                            <input type="name" class="form-control" id="name" aria-describedby="name" name="name" placeholder="Twoje imię i nazwisko..." required>
+                            <input type="text" class="form-control" id="name" aria-describedby="name" name="name" placeholder="Twoje imię i nazwisko..." required>
                         </div>
                         <div class="form-group">
                             <input type="email" class="form-control" id="email" aria-describedby="email" name="email" placeholder="Twój email..." required>
@@ -361,7 +381,9 @@
                 </div>
             </div>
         </div>
+        <footer class="text-center">Wszelkie prawa zastrzeżone <span id="year"></span></footer>
     </section>
+   
 
 
 
@@ -376,6 +398,9 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
     <script>
+        //touch mobile function
+        document.addEventListener("touchstart", function () {}, true);
+
         //owlCarousel
         $(document).ready(function() {
             $('#package-types').owlCarousel({
@@ -401,9 +426,17 @@
 
             //navbar class toggle
 
-            $(window).scroll(checkScroll);
+            $(window).on('scroll resize', function() {
+                var $win = $(window);
+                var scroll = $win.scrollTop();
+                var winWidth = $win.width();
 
-            function checkScroll() {
+                if (winWidth <= 540)
+                    return;
+
+                  $(window).scroll(checkScroll);
+           
+                    function checkScroll() {
                 if ($(window).scrollTop() >= 30) {
                     $('.navbar').addClass('solid');
                     $('.nav-link').addClass('solid-nav-link');
@@ -416,6 +449,18 @@
                     $('.fa-bars').removeClass('solid-nav-link');
                 }
             }
+                
+            });
+                
+
+
+            //mobile navbar dark background
+            $('.navbar-toggler').on('click', function () {
+                $('.navbar').toggleClass('solid');
+                    $('.nav-link').toggleClass('solid-nav-link');
+                    $('.btn-contact').toggleClass('solid-btn-custom');
+                    $('.fa-bars').toggleClass('solid-nav-link');
+            });
 
             //Init scrollspy
             $('body').scrollspy({
@@ -442,7 +487,7 @@
             AOS.init();
 
             //Get the current year for the copyright
-            $('#year').text(new Date().getFullYear());
+            $('#year').text(new Date().getFullYear() + '.');
 
             //check the url
             $('#sendBtn').on('click', checkURL())
@@ -456,7 +501,6 @@
                         alert('send')
                     }
                 }
-
         });
     </script>
 </body>
